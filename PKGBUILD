@@ -1,5 +1,5 @@
 pkgname=firejail-apparmor
-pkgver=0.9.58.2
+pkgver=0.9.60
 pkgrel=1
 pkgdesc="Apparmor support for Firejail"
 arch=('i686' 'x86_64')
@@ -12,7 +12,7 @@ backup=('etc/firejail/login.users'
 	'etc/firejail/firejail.config'
 	'etc/apparmor.d/local/firejail-local')
 source=(${pkgname}-${pkgver}.tar.gz::https://github.com/netblue30/firejail/archive/$pkgver.tar.gz)
-sha256sums=('80a7afb2aa128cbffe537eaa2cad82fe8ecd7879184f5aa0d2ff12268e8edab8')
+sha256sums=('dd3059b19365c2c095b85e3f86737fdcaca0a05357680f0e377bebf07791bc70')
 
 build() {
 	cd "${srcdir}/firejail-${pkgver}"
